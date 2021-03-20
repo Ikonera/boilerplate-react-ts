@@ -1,17 +1,16 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const ESLintWebpackPlugin = require("eslint-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "React & TS app"
+const APP_NAME = "Gabriel MILLET - Portfolio"
 
 module.exports = {
 	mode: "development",
 	devtool: "inline-source-map",
 	devServer: {
 		contentBase: "./dist",
-		port: 3000,
+		port: 3010,
 		historyApiFallback: true,
 	},
 	entry: {
@@ -48,9 +47,6 @@ module.exports = {
 	plugins: [
 		new DefinePlugin({
 			__APPNAME__: APP_NAME
-		}),
-		new ESLintWebpackPlugin({
-			extensions: [".tsx", ".ts"],
 		}),
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "Gabriel MILLET - Portfolio"
+const APP_NAME = "Webpack with React & Typescript configuration files"
 
 module.exports = {
 	mode: "development",

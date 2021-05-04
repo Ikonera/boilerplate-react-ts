@@ -1,6 +1,6 @@
 {
   "name": "tspack_conf",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "description": "Webpack config with TS & React",
   "scripts": {
     "dev": "webpack serve --open",
@@ -17,23 +17,29 @@
     "url": "https://github.com/Ikonera/tspack_conf/issues"
   },
   "homepage": "https://github.com/Ikonera/tspack_conf#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
     "@types/react-router-dom": "^5.1.7",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "sass": "^1.32.5",
-    "sass-loader": "^10.1.1",
+    "css-loader": "^5.2.4",
+    "esbuild-loader": "^2.12.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
-    "ts-loader": "^8.0.14",
-    "typescript": "^4.1.3",
-    "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   }
 }

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "Webpack with React & Typescript configuration files"
+const APP_NAME = "Webpack with tsx configuration files"
 
 module.exports = {
 	mode: "development",
@@ -35,13 +35,25 @@ module.exports = {
 		rules: [
 			{
 				test: /\.tsx?/,
-				use: "ts-loader",
+				loader: "esbuild-loader",
 				exclude: /node_modules/,
+				options: {
+					loader: "tsx",
+					target: "es2015"
+				}
 			},
 			{
 				test: /\.s[ac]ss$/i,
 				use: ["style-loader", "css-loader", "sass-loader"]
-			}
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				loader: "file-loader",
+			},
 		],
 	},
 	plugins: [

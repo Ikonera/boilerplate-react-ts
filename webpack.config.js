@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "Webpack with tsx configuration files"
+const APP_NAME = "react-ts-skeleton"
 
 module.exports = {
 	mode: "development",

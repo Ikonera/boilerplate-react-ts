@@ -1,4 +1,4 @@
-# React-TS-Skeleton
+# React-TS-Boilerplate
 ## Description
 Template repo for ReactTS projects.
 

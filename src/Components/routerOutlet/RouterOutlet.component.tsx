@@ -9,7 +9,7 @@ const RouterOutlet: FunctionComponent = () =>
 			<Route exact path='/' component={HomePage} />
 			{/* Put some routes here */}
 		</Switch>
-   )
+	)
 }
 
 export default RouterOutlet

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react"
-import { Link, Grid, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
-import { GitHub } from "@material-ui/icons"
+import { Link, Grid, Typography } from "@mui/material"
+import { makeStyles } from "@mui/styles"
+import { GitHub } from "@mui/icons-material"
 //import "./page.scss"
 
 
@@ -40,13 +40,13 @@ const HomePage: FunctionComponent = () =>
 				<Grid item alignItems="center">
 					<Link {...gitLinkProps}>
 						<Typography className={ classes.link }>
-							github.com/Ikonera/react-ts-skeleton
+							github.com/Ikonera/boilerplate-react-ts
 						</Typography>
 					</Link>
 				</Grid>
 			</Grid>
 		</section>
-   )
+	)
 }
 
 export default HomePage

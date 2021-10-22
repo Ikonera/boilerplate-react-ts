@@ -19,6 +19,7 @@ npm run dev
 npm run build
 ```
 
-## Coding style
-
-> *soon*
+## Dockerize app
+```shell
+docker-compose up -d
+```
